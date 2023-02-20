@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bellota","Londrina Solid",cursive;
+}
+
+
+.container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.square{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    transform: rotate(140deg);
+    max-width: 100px;
+    max-height: 100px;
+    background-color: fuchsia;
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    box-shadow:inset  4px 4px 30px 0 red;
+    border-radius: 10px;
+}
+
+.square:hover{
+    background-color: gold;
+}
+
+
+.container{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin-top: 40vh;
+}
+
+
+.fa-brands{
+    font-size: 70px;
+    transform: rotate(-140deg);
+    
+}
+
+
+img{
+    width: 70px;
+    height: 70px;
+    transform: rotate(-140deg);
+}
+
+span{
+    
+    font-size: 20px;
+    transform: rotate(-140deg);
+    text-align: center;
+    position: absolute;
+    padding-top: 100px;
+}
+
+
+@media screen and (max-width:442px){
+    body{
+        background-color: rgb(19, 80, 194);
+    }
+
+    .container{
+        margin-top: 35vh;
+    }
+
+    
+
+
+    
+}
