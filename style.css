@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Bellota","Londrina Solid",cursive;
+    /* border: solid black 1px; */
 }
 
 
@@ -16,15 +17,18 @@ body{
     height: 100vh;
     overflow: hidden;
     overflow-y: scroll;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container{
-    height: 100%;
+    width: 100%;
+    height: fit-content;
     display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 100px;
     justify-content: center;
+    align-items: center;
+    column-gap: 60px;
 }
 
 
@@ -37,7 +41,6 @@ body{
     max-height: 100px;
     background-color: fuchsia;
     display: flex;
-    flex-direction: column-reverse;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -81,8 +84,10 @@ span{
     }
 
     .container{
-        margin-top: 35vh;
+        flex-wrap: wrap;
+        row-gap: 70px;
     }
+
 
     
 
