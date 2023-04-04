@@ -6,10 +6,25 @@
 }
 
 
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+
+body{
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
 .container{
+    height: 100%;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    gap: 100px;
+    justify-content: center;
 }
 
 
@@ -35,12 +50,6 @@
 }
 
 
-.container{
-    display: flex;
-    gap: 50px;
-    justify-content: center;
-    margin-top: 40vh;
-}
 
 
 .fa-brands{
